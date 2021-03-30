@@ -56,7 +56,7 @@ inquirer
 
   const fileName = `README.md`;
   fs.writeFile(fileName,
-    `# ${data.title} !
+    `# ${data.title}!
 
     ## Description: 
     ${data.description}
