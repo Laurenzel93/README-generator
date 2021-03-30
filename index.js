@@ -54,7 +54,7 @@ inquirer
 
   .then(function(data) {
 
-  const fileName = `README.md`;
+  const fileName = `YourREADME.md`;
   fs.writeFile(fileName,
     `# ${data.title}!
 
@@ -62,12 +62,12 @@ inquirer
     ${data.description}
     
     ## Table of Contents
-    1. Installation
-    2. Usage
-    3. License 
-    4. Contributing
-    5. Tests 
-    6. Questions
+    1. Installation(#Installation)
+    2. Usage(#Usage)
+    3. License(#License)
+    4. Contributing(#Contributing)
+    5. Tests(#Tests)
+    6. Questions(#Questions)
     
     ## Installation
     ${data.instructions}
