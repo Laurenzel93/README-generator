@@ -1,0 +1,24 @@
+{
+  "name": "README-generator",
+  "version": "1.0.0",
+  "description": "Deployed Link: laurenzel93.github.io/README-generator/ <br> Repo Link: github.com/Laurenzel93/README-generator <br> <br> This app will generate a README.md file based on the input entered by the user into the command line <br> <br> Techologies: JavaScript, Node<br>",
+  "main": "index.js",
+  "dependencies": {
+    "inquirer": "^8.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Laurenzel93/README-generator.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Laurenzel93/README-generator/issues"
+  },
+  "homepage": "https://github.com/Laurenzel93/README-generator#readme"
+}
