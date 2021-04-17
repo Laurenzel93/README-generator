@@ -1,6 +1,7 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 let licenseChoices = ["GNU General Public License v3.0", "MIT License", "The Unlicense", "Mozilla Public License 2.0", "Boost Software License 1.0"];
+let badges;
 
 inquirer
   .prompt([
@@ -54,9 +55,21 @@ inquirer
 
   .then(function(data) {
 
+    if (data.license === "GNU General Public License v3.0") {
+      badge = "https://img.shields.io/badge/License-GPLv3-blue.svg";
+    } else if (data.license === "MIT License") {
+      badge = "https://img.shields.io/badge/License-MIT-yellow.svg";
+    } else if (data.license === "The Unlicense") {
+      badge = "https://img.shields.io/badge/license-Unlicense-blue.svg";
+    } else if (data.license === "Mozilla Public License 2.0") {
+      badge = "https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg";
+    } else if (data.license === "Boost Software License 1.0") {
+      badge = "https://img.shields.io/badge/License-Boost%201.0-lightblue.svg";
+    }
+
   const fileName = `YourREADME.md`;
   fs.writeFile(fileName,
-    `# ${data.title}!
+    `# ${data.title}!(${badges})
 
     ## Description: 
     ${data.description}
